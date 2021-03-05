@@ -18,7 +18,7 @@ namespace PierreBakery2.Models
     }
     public string ReturnDate()
     {
-      
+      return "test";
     }
   }
 }
