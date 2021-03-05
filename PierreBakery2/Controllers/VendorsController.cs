@@ -34,5 +34,21 @@ namespace PierreBakery2.Controllers
       modelToPass.Add("order", ordersToPass);
       return View(modelToPass);
     }
+    [HttpPost("/vendors/{vendorId}/orders")]
+    public ActionResult Create(int vendorId, string title, string description, int price, string date)
+    {
+      Dictionary<string, object> modelToPass = new Dictionary<string, object>();
+      Vendor foundVendor = Vendor.Find(vendorId);
+      string[] splitDateInput = date.Split('-');
+      int parsedYear = int.Parse(splitDateInput[0]);
+      int parsedMonth = int.Parse(splitDateInput[1]);
+      int parsedDay = int.Parse(splitDateInput[2]);
+      Order newOrder = new Order(title, description, price, parsedYear, parsedMonth, parsedDay);
+      foundVendor.AddOrder(newOrder);
+      List<Order> vendorsOrders = foundVendor.Orders;
+      modelToPass.Add("order", vendorsOrders);
+      modelToPass.Add("vendor", foundVendor);
+      return View("Show", modelToPass);
+    }
   }
 }
