@@ -15,10 +15,12 @@ namespace PierreBakery2.Models
       Title = title;
       Description = description;
       Price = price;
+      Date = new DateTime(year, month, day);
     }
     public string ReturnDate()
     {
-      return "test";
+      string stringDate = Date.ToString("d");
+      return stringDate;
     }
   }
 }
