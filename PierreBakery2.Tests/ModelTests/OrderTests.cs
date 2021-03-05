@@ -23,5 +23,14 @@ namespace PierreBakery2.Tests
       string result = newOrder.Title;
       Assert.AreEqual(title, result);
     }
+    [TestMethod]
+    public void GetDescription_ReturnsDescription_String()
+    {
+      string description = "The biggest macaronis in town";
+      string title = "Big Mac Daniel's";
+      Order newOrder = new Order(title, description, 1, 2, 3, 4);
+      string result = newOrder.Description;
+      Assert.AreEqual(description, result);
+    }
   }
 }
