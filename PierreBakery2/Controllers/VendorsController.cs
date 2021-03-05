@@ -19,5 +19,10 @@ namespace PierreBakery2.Controllers
       Vendor newVendor = new Vendor(vendorName);
       return RedirectToAction("Index");
     }
+    [HttpGet("vendors/new")]
+    public ActionResult New()
+    {
+      return View();
+    }
   }
 }
