@@ -15,7 +15,7 @@ namespace PierreBakery2.Models
     }
     public static List<Vendor> GetAll()
     {
-      return null;
+      return _instances;
     }
   }
 }
