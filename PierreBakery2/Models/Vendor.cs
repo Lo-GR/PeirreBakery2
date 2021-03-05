@@ -5,12 +5,17 @@ namespace PierreBakery2.Models
 {
   public class Vendor
   {
+    private static List<Vendor> _instances = new List<Vendor> {};
     public string Name {get;}
     public int Id {get;}
     public Vendor(string vendorName)
     {
       Name = vendorName;
       Id = 200;
+    }
+    public static List<Vendor> GetAll()
+    {
+      return null;
     }
   }
 }
