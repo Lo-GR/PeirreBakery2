@@ -69,7 +69,7 @@ namespace PierreBakery2.Tests
       List<Order> newList = new List<Order> { order01 };
       string name01 = "Big Mac Daniel's Macaronis";
       Vendor vendor01 = new Vendor(name01);
-      vendor01.AddItem(order01);
+      vendor01.AddOrder(order01);
       List<Order> result = vendor01.Orders;
       CollectionAssert.AreEqual(newList, result);
     }
