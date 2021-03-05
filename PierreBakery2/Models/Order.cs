@@ -33,5 +33,9 @@ namespace PierreBakery2.Models
     {
       _instances.Clear();
     }
+    public static Order Find(int searchId)
+    {
+      return null;
+    }
   }
 }
