@@ -6,13 +6,13 @@ namespace PierreBakery2.Controllers
 {
   public class OrdersController : Controller
   {
-    [HttpGet("/vendors/{vendorId}/vendors/new")]
+    [HttpGet("/vendors/{vendorId}/orders/new")]
     public ActionResult New(int vendorId)
     {
       Vendor vendor = Vendor.Find(vendorId);
       return View(vendor);
     }
-    [HttpGet("/vendors/{vendorId]/orders/{orderId}")]
+    [HttpGet("/vendors/{vendorId}/orders/{orderId}")]
     public ActionResult Show(int vendorId, int orderId)
     {
       Order order = Order.Find(orderId);
@@ -22,5 +22,6 @@ namespace PierreBakery2.Controllers
       modelToPass.Add("vendor", vendor);
       return View(modelToPass);
     }
+    
   }
 }
