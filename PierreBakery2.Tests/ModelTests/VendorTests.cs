@@ -37,5 +37,16 @@ namespace PierreBakery2.Tests
       List<Vendor> result = Vendor.GetAll();
       CollectionAssert.AreEqual(newList, result);
     }
+    [TestMethod]
+    public void GetAll_ReturnsPopulatedList_VendorList()
+    {
+      string name1 = "Big Mac Daniel's Macaronis";
+      Vendor vendor1 = new Vendor(name1);
+      string name2 = "Little Limes on Little Lane";
+      Vendor vendor2 = new Vendor(name2);
+      List<Vendor> newList = new List<Vendor> {vendor1, vendor2};
+      List<Vendor> result = Vendor.GetAll();
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
