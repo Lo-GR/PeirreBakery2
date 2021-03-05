@@ -17,6 +17,8 @@ DateTime in c#___
 DateTime dt2 = new DateTime(2015, 12, 31); 
 - Throws error if dates out of range, verify cshtml can lock valid dates.
 
+https://docs.microsoft.com/en-us/dotnet/api/system.datetime.date?view=net-5.0
+
 User Interface___
 - Homepage splashpage that includes a link to Vendors Page.
 - Vendor Page should include link to new form.
