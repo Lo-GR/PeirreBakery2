@@ -13,5 +13,10 @@ namespace PierreBakery2.Controllers
       List<Vendor> allVendors = Vendor.GetAll();
       return View(allVendors);
     }
+    [HttpPost("/vendors")]
+    public ActionResult Create(string vendorName)
+    {
+      
+    }
   }
 }
