@@ -32,5 +32,15 @@ namespace PierreBakery2.Tests
       string result = newOrder.Description;
       Assert.AreEqual(description, result);
     }
+    [TestMethod]
+    public void GetPrice_ReturnsPrice_Int()
+    {
+      string description = "The biggest macaronis in town";
+      string title = "Big Mac Daniel's";
+      int price = 5;
+      Order newOrder = new Order(title, description, price, 2, 3, 4);
+      int result = newOrder.Price;
+      Assert.AreEqual(price, result);
+    }
   }
 }
