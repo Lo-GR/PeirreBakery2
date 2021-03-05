@@ -50,7 +50,7 @@ namespace PierreBakery2.Tests
       int price = 5;
       Order newOrder = new Order(title, description, price, 2000, 3, 4);
       DateTime result = newOrder.Date;
-      Assert.AreEqual(typeof(int), result.GetType());
+      Assert.AreEqual(typeof(DateTime), result.GetType());
     }
   }
 }
