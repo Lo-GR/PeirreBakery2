@@ -11,7 +11,7 @@ namespace PierreBakery2.Models
     public Order(string title, string description, int price, int year, int month, int day)
     {
       Title = title;
-      Description = "test";
+      Description = description;
     }
   }
 }
