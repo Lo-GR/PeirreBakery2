@@ -9,7 +9,7 @@ namespace PierreBakery2.Models
     public string Description {get; }
     public int Price {get;}
     public DateTime Date {get;}
-    private static List<int> _instances = new List<int> {};
+    private static List<Order> _instances = new List<Order> {};
     public Order(string title, string description, int price, int year, int month, int day)
     {
       Title = title;
@@ -24,7 +24,7 @@ namespace PierreBakery2.Models
     }
     public static List<Order> GetAll()
     {
-      return null;
+      return _instances;
     }
   }
 }
