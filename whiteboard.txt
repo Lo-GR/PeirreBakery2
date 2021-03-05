@@ -10,6 +10,7 @@ Functionality___
 - Vendor Class Constructor that holds Description, Name, and List of Order objects belonging to vendor.
 - Order Class Constructor that includes Title, Description, Price, Date. Stored in Vendor Constructor.
 - Vendor class objects housed in static list.
+- Set may not be necessary without update feature
 
 DateTime in c#___
 - " create an object of the DateTime struct using the new keyword. The following creates a DateTime object with the default value. "
