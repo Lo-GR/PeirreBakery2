@@ -9,6 +9,7 @@ namespace PierreBakery2.Models
     public string Description {get; }
     public int Price {get;}
     public DateTime Date {get;}
+    public int Id {get;}
     private static List<Order> _instances = new List<Order> {};
     public Order(string title, string description, int price, int year, int month, int day)
     {
@@ -17,6 +18,7 @@ namespace PierreBakery2.Models
       Price = price;
       Date = new DateTime(year, month, day);
       _instances.Add(this);
+      Id = _instances.Count;
     }
     public string ReturnDate()
     {
