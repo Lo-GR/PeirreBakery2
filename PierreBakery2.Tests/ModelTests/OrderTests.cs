@@ -86,7 +86,7 @@ namespace PierreBakery2.Tests
     {
       Order order1 = new Order("Big Mac Daniel's", "The biggest macaronis in town", 5, 2000, 3, 4);
       int result = order1.Id;
-      Assert.AreEqual(300, result);
+      Assert.AreEqual(1, result);
     }
   }
 }
