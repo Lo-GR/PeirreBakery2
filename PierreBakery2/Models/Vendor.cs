@@ -12,7 +12,7 @@ namespace PierreBakery2.Models
     {
       Name = vendorName;
       _instances.Add(this);
-      Id = 200;
+      Id = _instances.Count;
     }
     public static List<Vendor> GetAll()
     {
