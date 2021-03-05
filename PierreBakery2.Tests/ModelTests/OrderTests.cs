@@ -49,8 +49,8 @@ namespace PierreBakery2.Tests
       string title = "Big Mac Daniel's";
       int price = 5;
       Order newOrder = new Order(title, description, price, 2000, 3, 4);
-      int result = newOrder.Date;
-      Assert.AreEqual(typeof(DateTime), result.GetType());
+      DateTime result = newOrder.Date;
+      Assert.AreEqual(typeof(int), result.GetType());
     }
   }
 }

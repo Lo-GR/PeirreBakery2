@@ -8,6 +8,7 @@ namespace PierreBakery2.Models
     public string Title {get; }
     public string Description {get; }
     public int Price {get;}
+    public DateTime Date {get;}
 
     public Order(string title, string description, int price, int year, int month, int day)
     {
