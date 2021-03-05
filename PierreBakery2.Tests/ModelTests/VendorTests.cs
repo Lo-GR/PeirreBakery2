@@ -22,5 +22,13 @@ namespace PierreBakery2.Tests
       string result = newVen.Name;
       Assert.AreEqual(name, result);
     }
+    [TestMethod]
+    public void Getid_ReturnsVendorId_Int()
+    {
+      string name = "Big Mac Daniel's Macaronis";
+      Vendor newVen = new Vendor(name);
+      int result = newVen.Id;
+      Assert.AreEqual(1, result);
+    }
   }
 }
