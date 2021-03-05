@@ -6,10 +6,12 @@ namespace PierreBakery2.Models
   public class Order
   {
     public string Title {get; }
+    public string Description {get; }
 
     public Order(string title, string description, int price, int year, int month, int day)
     {
       Title = title;
+      Description = "test";
     }
   }
 }
