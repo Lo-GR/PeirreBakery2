@@ -13,7 +13,7 @@ namespace PierreBakery2.Tests
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
       Order newOrder = new Order("testTitle", "testDescription", 1, 2, 3, 4); // ints are price, year, month, day
-      Assert.AreEqual(typeof(Order), "test");
+      Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
   }
 }
