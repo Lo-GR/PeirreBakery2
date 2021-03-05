@@ -12,5 +12,15 @@ namespace PierreBakery2.Controllers
       Vendor vendor = Vendor.Find(vendorId);
       return View(vendor);
     }
+    [HttpGet("/vendors/{vendorId]/orders/{orderId}")]
+    public ActionResult Show(int vendorId, int orderId)
+    {
+      Order order = Order.Find(orderId);
+      Vendor vendor = Vendor.Find(vendorId);
+      Dictionary<string, object> modelToPass = new Dictionary<string, object>();
+      modelToPass.Add("order", order);
+      modelToPass.Add("vendor", vendor);
+      return View(modelToPass);
+    }
   }
 }
