@@ -15,5 +15,13 @@ namespace PierreBakery2.Tests
       Order newOrder = new Order("testTitle", "testDescription", 1, 2, 3, 4); // ints are price, year, month, day
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
+    [TestMethod]
+    public void GetTitle_ReturnsTitle_String()
+    {
+      string title = "Big Mac Daniel's";
+      Order newOrder = new Order(title, "testDescription", 1, 2, 3, 4);
+      string result = newOrder.Title;
+      Assert.AreEqual(title, result);
+    }
   }
 }
