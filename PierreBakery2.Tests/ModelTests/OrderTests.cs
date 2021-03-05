@@ -72,5 +72,14 @@ namespace PierreBakery2.Tests
       List<Order> result = Order.GetAll();
       CollectionAssert.AreEqual(newList, result);
     }
+    [TestMethod]
+    public void GetAll_ReturnsPopulatedList_OrderList()
+    {
+      Order order1 = new Order("Big Mac Daniel's", "The biggest macaronis in town", 5, 2000, 3, 4);
+      Order order2 = new Order("Tiny Limes", "Tiniest Limes Around", 2, 2000, 3, 4);
+      List<Order> newOrders = new List<Order> {order1, order2};
+      List<Order> result = Order.GetAll();
+      CollectionAssert.AreEqual(newOrders, result);
+    }
   }
 }
