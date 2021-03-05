@@ -11,6 +11,11 @@ Functionality___
 - Order Class Constructo that includes Title, Description, Price, Date. Stored in Vendor Constructor.
 - Vendor class objects housed in static list.
 
+DateTime in c#___
+- " create an object of the DateTime struct using the new keyword. The following creates a DateTime object with the default value. "
+//assigns year, month, day
+DateTime dt2 = new DateTime(2015, 12, 31); 
+- Throws error if dates out of range, verify cshtml can lock valid dates.
 
 User Interface___
 - Homepage splashpage that includes a link to Vendors Page.
