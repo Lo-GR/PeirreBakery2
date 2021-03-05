@@ -1,0 +1,13 @@
+@using PierreBakery2.Models;
+
+<h3>Here are all the Orders for the Vendor: @Model["vendor"].Name </h3>
+
+<ol>
+  @foreach (Order order in @Model["order"])
+  {
+    <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
+  }
+</ol>
+<h3><a href='/vendors/@Model["vendor"].Id/orders/new'>Add new Order for this Vendor</a></h3>
+<p><a href='/'>Back home</a></p>
+<p><a href="/vendors">Back to Vendor List</a></p>
