@@ -16,7 +16,7 @@ namespace PierreBakery2.Models
       Description = description;
       Price = price;
       Date = new DateTime(year, month, day);
-    
+      _instances.Add(this);
     }
     public string ReturnDate()
     {
