@@ -52,5 +52,15 @@ namespace PierreBakery2.Tests
       DateTime result = newOrder.Date;
       Assert.AreEqual(typeof(DateTime), result.GetType());
     }
+    [TestMethod]
+    public void ReturnDate_ReturnsDateTimeString_String()
+    {
+      string description = "The biggest macaronis in town";
+      string title = "Big Mac Daniel's";
+      int price = 5;
+      Order newOrder = new Order(title, description, price, 2000, 3, 4);
+      string expectedResult = "3/4/2000";
+      Assert.AreEqual(newOrder.ReturnDate(), expectedResult);
+    }
   }
 }

@@ -8,7 +8,7 @@ Objectives/Expectations___
 
 Functionality___
 - Vendor Class Constructor that holds Description, Name, and List of Order objects belonging to vendor.
-- Order Class Constructo that includes Title, Description, Price, Date. Stored in Vendor Constructor.
+- Order Class Constructor that includes Title, Description, Price, Date. Stored in Vendor Constructor.
 - Vendor class objects housed in static list.
 
 DateTime in c#___

@@ -16,5 +16,9 @@ namespace PierreBakery2.Models
       Description = description;
       Price = price;
     }
+    public string ReturnDate()
+    {
+      
+    }
   }
 }
