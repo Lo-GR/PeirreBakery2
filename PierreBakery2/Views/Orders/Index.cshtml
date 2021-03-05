@@ -1,0 +1,16 @@
+@using PierreBakery2.Models;
+
+<h1>List of Vendors:</1>
+
+@if (@Model.Count == 0)
+{
+  <h3>No Vendors have been added yet, please enter a vendor in <a href="/vendors/new">this new vendor form</a></h3>
+}
+
+@foreach (Vendor vendor in Model)
+{
+  <h3><a href='/vendors/@vendors.Id'>@vendor.Name</a></h3>
+}
+
+<p><a href='/'>Back home</a></p>
+<a href="/vendors">Refresh Vendor List</a>
