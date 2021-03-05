@@ -66,12 +66,12 @@ namespace PierreBakery2.Tests
     public void AddOrder_AssociatesOrderWithVendor_ItemList()
     {
       Order order01 = new Order("Big Mac Daniel's", "The biggest macaronis in town", 5, 2000, 3, 4);
-      List<Order> newList = new List<Order> { order01 };
+      List<Order> newerList = new List<Order> { order01 };
       string name01 = "Big Mac Daniel's Macaronis";
       Vendor vendor01 = new Vendor(name01);
       vendor01.AddOrder(order01);
       List<Order> result = vendor01.Orders;
-      CollectionAssert.AreEqual(newList, result);
+      CollectionAssert.AreEqual(newerList, result);
     }
   }
 }

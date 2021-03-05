@@ -14,6 +14,7 @@ namespace PierreBakery2.Models
       Name = vendorName;
       _instances.Add(this);
       Id = _instances.Count;
+      Orders = new List<Order>{};
     }
     public static List<Vendor> GetAll()
     {
@@ -29,7 +30,7 @@ namespace PierreBakery2.Models
     }
     public void AddOrder(Order orderBeingAdded)
     {
-      
+      Orders.Add(orderBeingAdded);
     }
   }
 }
