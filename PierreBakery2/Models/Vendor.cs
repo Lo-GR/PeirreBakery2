@@ -8,7 +8,7 @@ namespace PierreBakery2.Models
     public string Name {get;}
     public Vendor(string vendorName)
     {
-      Name = "test";
+      Name = vendorName;
     }
   }
 }
