@@ -11,11 +11,16 @@ namespace PierreBakery2.Models
     public Vendor(string vendorName)
     {
       Name = vendorName;
+      _instances.Add(this);
       Id = 200;
     }
     public static List<Vendor> GetAll()
     {
       return _instances;
     }
+    public static void ClearAll()
+  {
+    _instances.Clear();
+  }
   }
 }
