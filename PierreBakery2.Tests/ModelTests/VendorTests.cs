@@ -30,5 +30,12 @@ namespace PierreBakery2.Tests
       int result = newVen.Id;
       Assert.AreEqual(1, result);
     }
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_VendorList()
+    {
+      List<Vendor> newList = new List<Vendor> {};
+      List<Vendor> result = Vendor.GetAll();
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
