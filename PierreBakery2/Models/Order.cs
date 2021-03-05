@@ -13,7 +13,7 @@ namespace PierreBakery2.Models
     {
       Title = title;
       Description = description;
-      Price = 42;
+      Price = price;
     }
   }
 }
