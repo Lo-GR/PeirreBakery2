@@ -7,7 +7,7 @@ Objectives/Expectations___
 - Pierre should be provided with a link to a page presenting him with a form to create a new Order for a particular Vendor. Hint: The route for this page might look something like: "/vendors/1/orders/new".
 
 Functionality___
-- Vendor Class Constructor that holds Description, Name, and List of Order objects belonging to vendor.
+- Vendor Class Constructor that holds Name, and List of Order objects belonging to vendor.
 - Order Class Constructor that includes Title, Description, Price, Date. Stored in Vendor Constructor.
 - Vendor class objects housed in static list.
 - Set may not be necessary without update feature
