@@ -35,7 +35,7 @@ namespace PierreBakery2.Models
     }
     public static Order Find(int searchId)
     {
-      return null;
+      return _instances[searchId -1];
     }
   }
 }
