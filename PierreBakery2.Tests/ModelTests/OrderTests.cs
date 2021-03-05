@@ -88,5 +88,13 @@ namespace PierreBakery2.Tests
       int result = order1.Id;
       Assert.AreEqual(1, result);
     }
+    [TestMethod]
+    public void Find_ReturnsCorrectOrder_Order()
+    {
+      Order order1 = new Order("Big Mac Daniel's", "The biggest macaronis in town", 5, 2000, 3, 4);
+      Order order2 = new Order("Tiny Limes", "Tiniest Limes Around", 2, 2000, 3, 4);
+      Order result = Order.Find(2)
+      Assert.AreEqual(order2, result);
+    }
   }
 }
