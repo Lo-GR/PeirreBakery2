@@ -20,6 +20,7 @@
 
 * **MVC**
 * **TDD**
+* **RESTful Conventions**
 
 ## _Description_
 This MVC webpage will present it's user with a splash screen and options to view current vendor orders. Both vendors and orders have separate webpage views and will be explorable by various links. The user is able to navigate to a new form for entering new vendors into the webpage. When navigating in the vendor pages, the user can then create a new order with various details pertaining to it. The orders will be associated with the vendors and kept within the vendors pages. 
